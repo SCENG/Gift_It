@@ -117,14 +117,14 @@ export default function Home() {
               <div className="emporium__content">
                   <img src="img/bedding.png" alt="" className="emporium__img"/>
                   <h3 className="emporium__title">BEDDINGS</h3>
-                  <span className="emporium__category">emporium</span>
+                  <span className="emporium__category">Bedding</span>
                   <a href="#" className="button button-link">Go Shopping</a>
                   {/* <a href="#" className="button emporium__button"><i className='bx bx-heart'></i></a> */}
               </div>
               <div className="emporium__content">
                   <img src="img/bedding.png" alt="" className="emporium__img"/>
                   <h3 className="emporium__title">Surprise gift</h3>
-                  <span className="emporium__category">emporium</span>
+                  <span className="emporium__category">Surprises</span>
                   <a href="#" className="button button-link">Go Shopping</a>
                   {/* <a href="#" className="button emporium__button"><i className='bx bx-heart'></i></a> */}
               </div>
