@@ -1,0 +1,280 @@
+/*========== HOME ==========*/
+.home{
+  &__container{
+      row-gap: .5rem;
+  }
+  &__img{
+      width: 200px;
+      justify-self: center;
+  }
+  &__title{
+      font-size: var(--biggest-font-size);
+      font-weight: var(--font-bold);
+      margin-bottom: var(--mb-2);
+  }
+  &__description{
+      margin-bottom: var(--mb-3);
+  }
+}
+
+/*========== BUTTONS ==========*/
+.button{
+  display: inline-block;
+  background-color: var(--first-color);
+  color: #fff;
+  padding: 1rem 1.5rem;
+  border-radius: .5rem; 
+  font-weight: var(--font-semi-bold);
+  transition: .3s;
+  
+  &:hover{
+      background-color: var(--first-color-alt);
+  }
+
+  &-link{
+      background: none;
+      padding: 0;
+      color: var(--first-color);
+
+      &:hover{
+          background-color: transparent;
+          color: var(--first-color-alt);
+      }
+  }
+}
+
+/*========== SHARE ==========*/
+.share{
+  &__data{
+      text-align: center;
+  }
+  &__description{
+      margin-bottom: var(--mb-2);
+  }
+  &__img{
+      width: 280px;
+      justify-self: center;
+  }
+}
+
+
+/*========== DECORATION ==========*/
+.decoration{
+  &__container{
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+  &__data{
+      text-align: center;
+      padding: 1rem 1rem 2rem;
+      background-color: var(--container-color);
+      box-shadow: 0 2px 6px rgba(65, 11, 16, .15);
+      border-radius: 1rem;
+      
+      &:hover{
+          box-shadow: 0 3px 12px rgba(65, 11, 16, .15);
+      }
+  }
+  &__img{
+      width: 180px;
+  }
+  &__title{
+      font-size: var(--h3-font-size);
+      margin-bottom: var(--mb-1);
+  }
+}
+
+/*========== ACCESSORIES ==========*/
+.emporium{
+  &__container{
+      grid-template-columns: repeat(2, 1fr);
+      padding-bottom: 2rem;
+  }
+  &__content{
+      position: relative;
+      display: grid;
+      padding: .25rem .75rem .75rem;
+      background-color: var(--container-color);
+      box-shadow: 0 2px 6px rgba(65, 11, 16, .15);
+      border-radius: 1rem;
+
+      &:hover{
+          box-shadow: 0 3px 12px rgba(65, 11, 16, .15);
+      }
+  }
+  &__img{
+      width: 110px;
+      justify-self: center;
+      margin-bottom: .25rem;
+  }
+  &__title, &__category{
+      text-align: center;
+  }
+  &__title{
+      font-size: var(--normal-font-size);
+  }
+  &__category{
+      font-size: var(--small-font-size);
+      margin-bottom: var(--mb-1);
+      color: var(--text-color-light);
+  }
+  &__preci{
+      font-weight: var(--font-semi-bold);
+      color: var(--title-color);
+  }
+  &__button{
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      display: flex;
+      font-size: 1.25rem;
+      padding: .5rem .625rem;
+      border-radius: 1rem 0 1rem 0;
+  }
+}
+
+/*========== SEND GIFT ==========*/
+.send{
+  background-color: var(--first-color-send);
+
+  &__title, &__description{
+      color: #fff;
+  }
+  &__description{
+      text-align: center;
+      margin-bottom: var(--mb-4);
+  }
+  &__direction{
+      display: flex;
+      justify-content: space-between;
+      background-color: #fff;
+      padding: .5rem;
+      border-radius: .5rem;
+  }
+  &__input{
+      width: 70%;
+      outline: none;
+      border: none;
+      font-size: var(--normal-font-size);
+      font-family: var(--body-font);
+
+      &::placeholder{
+          font-family: var(--body-font);
+      }
+  }
+  &__img{
+      width: 280px;
+      justify-self: center;
+  }
+}
+
+/*========== MEDIA QUERIES ==========*/
+/* For full-screen images on small screens */
+@media screen and (max-width: 359px){
+  .home__img,
+  .share__img,
+  .send__img{
+      width: 100%;
+  }
+}
+
+
+@media screen and (min-width: 576px){
+  .home__container, 
+  .share__container,
+  .send__container{
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+  }
+
+  .home{
+      &__container{
+          padding: 5rem 0 0;
+      }
+      &__img{
+          order: 1;
+      }
+  }
+
+  .section-title-center,
+  .share__data,
+  .send__description{
+      text-align: initial;
+  }
+
+  .home__img,
+  .share__img,
+  .send__img{
+      width: 100%;
+  }
+
+  .share__img{
+      order: -1;
+  }
+}
+
+@media screen and (min-width: 768px){
+  body{
+      margin: 0;
+  }
+
+  .section{
+      padding-top: 7rem;
+  }
+
+  .home__container{
+      padding: 7rem 2rem 0;
+  }
+
+  .share__container{
+      padding: 0 2rem;
+  }
+  
+  .emporium{
+      &__container{
+          grid-template-columns: repeat(3, 224px);
+          justify-content: center;
+      }
+      &__content{
+          padding: .5rem 1.5rem 1.5rem;
+      }
+      &__img{
+          width: 120px;
+          margin-bottom: var(--mb-1);
+      }
+      &__title, &__category{
+          text-align: initial;
+      }
+      &__button{
+          padding: .75rem;
+      }
+  }
+
+  .send{
+      background: none;
+
+      &__container{
+          background-color: var(--first-color-send);
+          padding: 2rem;
+          border-radius: 1.5rem;
+      }
+  }
+}
+
+@media screen and (min-width: 968px){
+  .bd-container{
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  .home__img,
+  .share__img,
+  .send__img{
+      width: 469px;
+  }
+
+  .home__container, 
+  .share__container,
+  .send__container{
+      column-gap: 5rem;
+  }
+}

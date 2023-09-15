@@ -1,0 +1,59 @@
+.currency_input {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .input,
+  .convertedTo {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+    border-radius: 15px;
+    margin: 15px 0 15px 0;
+  }
+
+  .input {
+    width: 100%;
+  
+    input {
+      border: 0;
+      padding-left: 30px;
+      width: 70%;
+      height: 40px;
+      border-radius: 15px 0 0 15px;
+      background-color: transparent;
+    }
+    p {
+      width: 30%;
+      padding-left: 10px;
+    }
+  }
+
+  .convertedTo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    padding-left: 20px;
+
+    .select {
+      height: 30px; // Set the height of the select element
+      background-color: transparent; // Set the background color
+      border: none;
+
+      &:focus {
+        outline: none; // Remove the default focus outline
+        border: none; // Remove the border on focus
+      }
+  
+      option {
+        height: 30px; // Set the height of the option element
+        background-color: aqua; // Set the background color
+        border: none;
+      }
+    }
+  }
+}

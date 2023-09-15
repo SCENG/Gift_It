@@ -1,0 +1,116 @@
+body.active-modal {
+  overflow-y: hidden;
+}
+
+.btn_modal{
+  display: inline-block;
+  background-color: var(--first-color);
+  color: #fff;
+  padding: .8rem 1.5rem;
+  border-radius: 1rem;
+  border: 0cm;
+  font-weight: var(--font-semi-bold);
+  transition: .3s;
+  
+  &:hover{
+      background-color: var(--first-color-alt);
+  }
+
+  &-link{
+      background: none;
+      padding: 0;
+      color: var(--first-color);
+
+      &:hover{
+          background-color: transparent;
+          color: var(--first-color-alt);
+      }
+  }
+}
+
+.modal, .overlay {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+}
+
+.overlay {
+  background: rgba(43, 42, 42, 0.425);
+}
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.4;
+  background: #f1f1f1;
+  border-radius: 15px;
+  width: 60%;
+  height: 70%;
+
+  display: flex;
+  flex-direction: row;
+
+  .payment,
+  .image {
+    flex: 1;
+    width: 50%;
+    box-sizing: border-box;
+  }
+
+  .payment {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+
+    .head_text {
+      font-size: 24px;
+      font-weight: 800;
+      text-align: center;
+    }
+  }
+
+  .image {
+    overflow: hidden;
+    border-radius: 0 15px 15px 0;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+
+  }
+
+  @media screen and (max-width: 820px) {
+    width: 95%;
+
+    .image {
+      display: none;
+    }
+  }
+
+  
+  .close-modal {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    padding: 10px 10px;
+    background-color: var(--first-color-send);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+
+  }
+}
