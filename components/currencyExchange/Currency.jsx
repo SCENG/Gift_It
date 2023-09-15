@@ -20,7 +20,7 @@ function Currency() {
       const options = {
         method: 'GET',
         headers: {
-          'X-RapidAPI-Key': '75a3623860msh2948fbf9a2760eep1dc3e3jsnc1cbf595e3c6',
+          'X-RapidAPI-Key': `${RAPIDAPI_KEY}`,
           'X-RapidAPI-Host': 'exchangerate-api.p.rapidapi.com'
         }
       };
