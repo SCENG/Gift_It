@@ -118,7 +118,7 @@ export default function Home() {
                   <a href="#" className="button button-link">Go Shopping</a>
               </div>
               <div className="emporium__content">
-                  <img src="img/bedding.png" alt="" className="emporium__img"/>
+                  <img src="img/surprisse.png" alt="" className="emporium__img"/>
                   <h3 className="emporium__title">Surprise gift</h3>
                   <span className="emporium__category">Surprises</span>
                   <a href="#" className="button button-link">Go Shopping</a>
