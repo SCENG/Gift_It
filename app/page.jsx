@@ -87,7 +87,6 @@ export default function Home() {
                   <h3 className="emporium__title">BOOKS</h3>
                   <span className="emporium__category">Education</span>
                   <a href="#" className="button button-link">Go Shopping</a>
-                  {/* <a href="#" className="button emporium__button"><i className='bx bx-heart'></i></a> */}
               </div>
 
               <div className="emporium__content">
@@ -95,7 +94,7 @@ export default function Home() {
                   <h3 className="emporium__title">FOOD</h3>
                   <span className="emporium__category">emporium</span>
                   <a href="#" className="button button-link">Go Shopping</a>
-                  {/* <a href="#" className="button emporium__button"><i className='bx bx-heart'></i></a> */}
+                  
               </div>
 
               <div className="emporium__content">
@@ -103,7 +102,6 @@ export default function Home() {
                   <h3 className="emporium__title">TOYS</h3>
                   <span className="emporium__category">Children</span>
                   <a href="#" className="button button-link">Go Shopping</a>
-                  {/* <a href="#" className="button emporium__button"><i className='bx bx-heart'></i></a> */}
               </div>
 
               <div className="emporium__content">
@@ -111,7 +109,6 @@ export default function Home() {
                   <h3 className="emporium__title">CLOTHES</h3>
                   <span className="emporium__category">Clothings</span>
                   <a href="#" className="button button-link">Go Shopping</a>
-                  {/* <a href="#" className="button emporium__button"><i className='bx bx-heart'></i></a> */}
               </div>
 
               <div className="emporium__content">
@@ -119,14 +116,12 @@ export default function Home() {
                   <h3 className="emporium__title">BEDDINGS</h3>
                   <span className="emporium__category">Bedding</span>
                   <a href="#" className="button button-link">Go Shopping</a>
-                  {/* <a href="#" className="button emporium__button"><i className='bx bx-heart'></i></a> */}
               </div>
               <div className="emporium__content">
                   <img src="img/bedding.png" alt="" className="emporium__img"/>
                   <h3 className="emporium__title">Surprise gift</h3>
                   <span className="emporium__category">Surprises</span>
                   <a href="#" className="button button-link">Go Shopping</a>
-                  {/* <a href="#" className="button emporium__button"><i className='bx bx-heart'></i></a> */}
               </div>
           </div>
       </section>

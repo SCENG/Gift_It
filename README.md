@@ -58,7 +58,7 @@ git clone https://github.com/SCENG/gift_it.git
 2. Navigate to the project directory.
 
 ```
-cd gift-it
+cd gift_it
 ```
 
 3. Install dependencies.
@@ -74,7 +74,7 @@ npm install
 1. Launch the application by running the following command:
 
 ```
-npm start
+npm run dev
 ```
 
 2. Visit [http://localhost:3000](http://localhost:3000) in your web browser.
